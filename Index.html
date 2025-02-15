@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JuliansWerkteile</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!--<link rel="icon" type="image/png" href="assets/icons8-internet-64.png">-->
+    <!--<link rel="icon" type="image/png" href="medienqueries.css">-->
+    <script src='main.js'></script>
+</head>
+    <body>
+        <!--TODO: Email versende Logik implimentieren -->
+        <!--TODO: Warenkorb Funktion -->
+        <header>
+            <!--Navigation-->
+            <nav>
+
+                <div class="TextLogo"> <h1>JuliansWerkteile.</h1> </div>
+
+                <div class="NavigationLinks">
+                    <ul>
+                        <li><a href="#">Startseite</a></li>
+                        <li><a href="#">Produkte</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <!--Produktebereich-->
+        <section id="ProdukteHero">
+                <div class="ProdukteHeroText">
+                    <h1>ProdukteKategorie</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
+        
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="Buttons">
+                                    <button type="button">In den Warenkorb</button>
+                                    <button type="button">Kontaktieren</button>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="Buttons">
+                                    <button type="button">In den Warenkorb</button>
+                                    <button type="button">Kontaktieren</button>
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="Buttons">
+                                    <button type="button">In den Warenkorb</button>
+                                    <button type="button">Kontaktieren</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+        
+            <!--Kontaktbereich-->
+            <section id="Kontakt">
+                <div class="KontaktText">
+                    <h1>Kontakt</h1>
+                    <p>Bei Fragen oder Anregungen können Sie uns gerne kontaktieren. Wir freuen uns auf Ihre Nachricht.
+                </div>
+        
+                <div class="KontaktFormular">
+        
+                    <h2>Schreiben Sie uns</h2>
+                    <p>Wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+        
+                    <form action="index.php" method="post">
+        
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" placeholder="Max Mustermann" required>
+        
+                    <label for="E-mail">E-Mail</label>
+                    <input type="email" name="E-mail" placeholder="Max.Mustermann@gmail.com" required>
+        
+                    <label for="Betreff">Betreff</label>
+                    <input type="text" name="Betreff" placeholder="Motorradteile">
+        
+                    <label for="Nachricht">Nachricht</label>
+                    <textarea name="nachricht" placeholder="Nachricht"required></textarea>
+        
+                    <button type="submit">Absenden</button>
+        
+                    </form>
+
+                </div>
+        
+            </section>
+
+            <!--Footer-->
+            <footer>
+                <nav>
+                    <div class="FooterLogo"> 
+                        <h1>JuliansWerkteile.</h1>
+
+                        <ul>
+                            <li><a href="#">Impressum</a></li>
+                            <li><a href="#">Datenschutz</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <p>Copyright &#169; 2025 JuliansWerkteile. Alle Rechte vorbehalten.</p>
+                <p>Designed by Kaleb Pohl</p>
+            </footer>
+
+    </body>
+
+</html>
