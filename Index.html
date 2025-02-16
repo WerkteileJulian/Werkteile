@@ -8,11 +8,15 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <!--<link rel="icon" type="image/png" href="assets/icons8-internet-64.png">-->
     <!--<link rel="icon" type="image/png" href="medienqueries.css">-->
-    <script src='main.js'></script>
 </head>
     <body>
-        <!--TODO: Email versende Logik implimentieren -->
-        <!--TODO: Warenkorb Funktion -->
+        <!--TODO: alle Modelle einfügen mit bildern dazu die namen anpassen und mengen name anpassen für warenkorb -->
+        <!--TODO: Impressum und datenschutz page-->
+        <!--TODO: css styling-->
+        <!--TODO: Input field modelle verstecken-->
+        <!--TODO: jump button zum kontakt und wieder nach oben-->
+        <!--TODO: Handy formattierung umsetzen-->
+
         <header>
             <!--Navigation-->
             <nav>
@@ -22,18 +26,26 @@
                 <div class="NavigationLinks">
                     <ul>
                         <li><a href="#">Startseite</a></li>
-                        <li><a href="#">Produkte</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#ProdukteHeroLkw">LKW-Modelle</a></li>
+                        <li><a href="#ProdukteHeroLkwAnhänger">LKW-Anhänger & Auflieger</a></li>
+                        <li><a href="#ProdukteHeroFeuerwehr">Feuerwehr- & Rettungsfahrzeuge</a></li>
+                        <li><a href="#ProdukteHeroMilitärfahrzeuge">Militärfahrzeuge</a></li>
+                        <li><a href="#ProdukteHeroSchiffsmodelle">Schiffsmodelle</a></li>
+                        <li><a href="#ProdukteHeroNutzfahrzeuge">Nutzfahrzeuge</a></li>
+                        <li><a href="#ProdukteHeroSonstige">Sonstige</a></li>
+                        <li><a href="#Kontakt">Kontakt</a></li>
                     </ul>
                 </div>
 
             </nav>
         </header>
 
+        <h1>Modelle</h1>
+
         <!--Produktebereich-->
-        <section id="ProdukteHero">
+        <section id="ProdukteHeroLkw">
                 <div class="ProdukteHeroText">
-                    <h1>ProdukteKategorie</h1>
+                    <h1>LKW-Modelle (Zugmaschinen)</h1>
                     <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
                 </div>
         
@@ -52,9 +64,15 @@
                                 <span>Preis</span>
                                 <p>Produktbeschreibung</p>
 
-                                <div class="Buttons">
-                                    <button type="button">In den Warenkorb</button>
-                                    <button type="button">Kontaktieren</button>
+                                <div class="ProduktKontakt">
+
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -73,9 +91,109 @@
                                 <span>Preis</span>
                                 <p>Produktbeschreibung</p>
 
-                                <div class="Buttons">
-                                    <button type="button">In den Warenkorb</button>
-                                    <button type="button">Kontaktieren</button>
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+
+            <section id="ProdukteHeroLkwAnhänger">
+                <div class="ProdukteHeroText">
+                    <h1>LKW-Anhänger & Auflieger</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
+        
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -94,9 +212,15 @@
                                 <span>Preis</span>
                                 <p>Produktbeschreibung</p>
 
-                                <div class="Buttons">
-                                    <button type="button">In den Warenkorb</button>
-                                    <button type="button">Kontaktieren</button>
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -107,7 +231,482 @@
         
                 </div>
             </section>
+
+            <section id="ProdukteHeroFeuerwehr">
+                <div class="ProdukteHeroText">
+                    <h1>Feuerwehr- & Rettungsfahrzeuge</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
         
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+
+            <section id="ProdukteHeroMilitärfahrzeuge">
+                <div class="ProdukteHeroText">
+                    <h1>Militärfahrzeuge & Motorräder</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
+        
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+
+            <section id="ProdukteHeroSchiffsmodelle">
+                <div class="ProdukteHeroText">
+                    <h1>Schiffsmodelle</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
+        
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+
+            <section id="ProdukteHeroNutzfahrzeuge">
+                <div class="ProdukteHeroText">
+                    <h1>Traktoren & Nutzfahrzeuge</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
+        
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+
+            <section id="ProdukteHeroSonstige">
+                <div class="ProdukteHeroText">
+                    <h1>Sonstige Modelle</h1>
+                    <p>Unsere Produkte sind von höchster Qualität und werden in Deutschland hergestellt. Wir bieten eine große Auswahl an Produkten für jeden Bedarf.
+                </div>
+        
+                <div class="ProdukteBilder">
+        
+                    <div class="Spalte">
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt1">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt1</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt2">
+                            </div>
+                        
+                            <div class="ProduktText">
+
+                                <h3>Produkt2</h3>
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+        
+                        <div class="Produkt">
+
+                            <div class="ProduktBild">
+                                <img src="fixtures/20241022_164732.jpg" alt="Produkt3">
+                            </div>
+
+                            <div class="ProduktText">
+
+                                <h3>Produkt3</h3>
+                                <label for="Produkt1">Produkt B</span>
+
+                                <span>Preis</span>
+                                <p>Produktbeschreibung</p>
+
+                                <div class="ProduktKontakt">
+                                    
+                                    <label for="ProduktMenge">Auf Lager</label>
+                                    <input id="ProduktMenge" type="number" value="1" min="1" max="10">
+                                    <div class="Buttons">
+                                        <button type="button" onclick="artikelHinzufuegen('Artikel 2')">In den Warenkorb</button>
+                                        <button type="button">Kontaktieren</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                </div>
+            </section>
+    
             <!--Kontaktbereich-->
             <section id="Kontakt">
                 <div class="KontaktText">
@@ -119,25 +718,33 @@
         
                     <h2>Schreiben Sie uns</h2>
                     <p>Wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+
+                    <div class="warenkorb">
+                        <h2>Ausgewählte Modelle</h2>
+                        <ul id="warenkorbListe">
+                            <!-- Hier werden die hinzugefügten Artikel mit Stückzahl angezeigt -->
+                        </ul>
+                    </div>
         
-                    <form action="index.php" method="post">
+                    <form id="contact-form" action="https://formspree.io/f/mnnjoako" method="POST">
         
                     <label for="Name">Name</label>
-                    <input type="text" name="Name" placeholder="Max Mustermann" required>
+                    <input type="text" name="name" placeholder="Max Mustermann" required>
         
                     <label for="E-mail">E-Mail</label>
-                    <input type="email" name="E-mail" placeholder="Max.Mustermann@gmail.com" required>
+                    <input type="email" name="email" placeholder="Max.Mustermann@gmail.com" required>
         
-                    <label for="Betreff">Betreff</label>
-                    <input type="text" name="Betreff" placeholder="Motorradteile">
-        
+                    <label for="modelle">Modelle</label>
+                    <input type="text" name="modelle" id="modelle" value="">
+
+                    <div id="cart" class="cart"></div>
+
                     <label for="Nachricht">Nachricht</label>
-                    <textarea name="nachricht" placeholder="Nachricht"required></textarea>
+                    <textarea name="message" placeholder="Nachricht"required></textarea>
         
                     <button type="submit">Absenden</button>
         
                     </form>
-
                 </div>
         
             </section>
@@ -158,6 +765,9 @@
                 <p>Copyright &#169; 2025 JuliansWerkteile. Alle Rechte vorbehalten.</p>
                 <p>Designed by Kaleb Pohl</p>
             </footer>
+
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script src='main.js'></script>
 
     </body>
 
