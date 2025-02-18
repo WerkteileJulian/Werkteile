@@ -1,0 +1,586 @@
+/* Grundlegendes Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.TextLogo h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Navigation Links */
+.NavigationLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.NavigationLinks li {
+    display: inline;
+}
+
+.NavigationLinks a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.NavigationLinks a:hover {
+    border-color: #888;
+    background: #eee;
+}
+
+/* Hamburger Menü für mobile Ansicht */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: #555;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .NavigationLinks {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        text-align: center;
+        border-top: 2px solid #ccc;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .NavigationLinks ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .NavigationLinks a {
+        display: block;
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .NavigationLinks.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Allgemeines Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Überschrift */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Produkte Bereich */
+.ProdukteHero {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Einleitungstext */
+.ProdukteHeroText {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ProdukteHeroText p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Produkt-Container mit FLEXBOX für Desktop */
+.ProdukteBilder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Einzelnes Produkt */
+.Produkt {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 280px; /* Begrenzte Breite für jedes Produkt */
+}
+
+.Produkt:hover {
+    transform: translateY(-5px);
+}
+
+/* Produktbild */
+.ProduktBild img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Produkttext */
+.ProduktText h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.ProduktText span {
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+/* Produktbeschreibung */
+.ProduktText p {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+/* Produkt-Kontaktbereich */
+.ProduktKontakt {
+    margin-top: 15px;
+}
+
+.ProduktKontakt label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Mengen-Auswahl */
+.ProduktKontakt input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.Buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Buttons button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Buttons button:hover {
+    background: #0056b3;
+}
+
+/* Zweiter Button (Kontaktieren) */
+.Buttons button:nth-child(2) {
+    background: #2e2d2d;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ProdukteBilder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Produkt {
+        width: 90%;
+    }
+}
+
+/* Kontakt-Bereich */
+#Kontakt {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschrift */
+.KontaktText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.KontaktText h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.KontaktText p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Kontaktformular */
+.KontaktFormular {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.KontaktFormular h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.KontaktFormular p {
+    text-align: center;
+    color: #666;
+}
+
+/* Warenkorb-Bereich */
+.warenkorb {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.warenkorb h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#warenkorbListe {
+    list-style: none;
+    padding: 0;
+}
+
+#warenkorbListe li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Entfernen-Button */
+.warenkorb .remove-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.warenkorb .remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+.warenkorb li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+/* Formular */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Verstecktes Input-Feld für Modelle */
+#modelle {
+    display: none;
+}
+
+/* Nachricht */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Absenden-Button */
+form button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 600px) {
+    #Kontakt {
+        padding: 20px;
+    }
+
+    .KontaktFormular {
+        padding: 15px;
+    }
+}
+
+/* Floating Button Container */
+.floating-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+/* Haupt-Button */
+.floating-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-btn:hover {
+    background: #0056b3;
+}
+
+/* Badge für Warenkorb */
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 50%;
+    width: 3px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.badge.hidden {
+    display: none;
+}
+
+/* Dropdown-Menü (versteckt) */
+.menu-options {
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Buttons im Dropdown */
+.menu-options button {
+    background: #f5f5f5;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu-options button:hover {
+    background: #ddd;
+}
+
+/* Mobile Anpassung */
+@media (max-width: 600px) {
+    .floating-menu {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .floating-btn {
+        padding: 12px;
+        font-size: 1.3rem;
+    }
+
+    .menu-options button {
+        width: 120px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Logo */
+footer .FooterLogo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 10px;
+    color: #4d4949;
+}
+
+/* Footer Links */
+footer .FooterLinks {
+    margin: 20px 0;
+}
+
+footer .FooterLinks a {
+    text-decoration: none;
+    color: #4d4949;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .FooterLinks a:hover {
+    color: #000000;
+}
+
+/* Footer Text */
+footer p {
+    font-size: 0.9rem;
+    color: #7a7777;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+
+    footer .FooterLinks {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer .FooterLinks a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+/* Section für den Privatverkauf Hinweis */
+.PrivatverkaufInfo {
+    background-color: #f5f5f5;
+    padding: 30px 10px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.PrivatverkaufInfo .PrivatverkaufText {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.PrivatverkaufInfo h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.PrivatverkaufInfo p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
