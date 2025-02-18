@@ -3,8 +3,21 @@ let warenkorb = [];
 
 // Funktion zum Hinzufügen von Artikeln zum Warenkorb
 function artikelHinzufuegen(artikel) {
-    const menge = parseInt(document.getElementById('ProduktMenge' + artikel).value);
-    const max = parseInt(document.getElementById('ProduktMenge' + artikel).max);
+    const inputField = document.getElementById('ProduktMenge' + artikel);
+    let menge = parseInt(inputField.value);
+    const max = parseInt(inputField.max);
+
+    if (isNaN(menge) || menge <= 0) {
+        alert('Bitte eine gültige Menge eingeben!');
+        inputField.value = 1; // Standardwert setzen
+        return;
+    }
+
+    if (menge > max) {
+        alert('Maximale Stückzahl überschritten! Die Menge wurde korrigiert.');
+        menge = max;
+        inputField.value = max; // Korrigierten Wert setzen
+    }
 
     // Prüfen, ob der Artikel bereits im Warenkorb ist
     const index = warenkorb.findIndex(item => item.name === artikel);
@@ -15,16 +28,13 @@ function artikelHinzufuegen(artikel) {
             alert('Maximale Stückzahl erreicht!');
             return;
         }
-        // Wenn der Artikel schon im Warenkorb ist, Stückzahl erhöhen
         alert('Artikel wurde hinzugefügt!');
         warenkorb[index].stueckzahl = neueStueckzahl;
     } else {
-        // Ansonsten neuen Artikel mit der angegebenen Stückzahl hinzufügen
         alert('Artikel wurde hinzugefügt!');
         warenkorb.push({ name: artikel, stueckzahl: menge });
     }
 
-    // Warenkorb-Liste im HTML aktualisieren
     updateWarenkorb();
 }
 
