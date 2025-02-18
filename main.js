@@ -16,9 +16,11 @@ function artikelHinzufuegen(artikel) {
             return;
         }
         // Wenn der Artikel schon im Warenkorb ist, Stückzahl erhöhen
+        alert('Artikel wurde hinzugefügt!');
         warenkorb[index].stueckzahl = neueStueckzahl;
     } else {
         // Ansonsten neuen Artikel mit der angegebenen Stückzahl hinzufügen
+        alert('Artikel wurde hinzugefügt!');
         warenkorb.push({ name: artikel, stueckzahl: menge });
     }
 
@@ -58,6 +60,8 @@ function updateWarenkorb() {
     const anzahl = warenkorb.reduce((summe, item) => summe + item.stueckzahl, 0);
     const badge = document.getElementById('warenkorbBadge');
     badge.textContent = anzahl;
+    const warenkorbbadge = document.getElementById('warenkorbBadge');
+    warenkorbbadge.textContent = anzahl;
 
     // Badge anzeigen, wenn Artikel im Warenkorb sind, andernfalls ausblenden
     if (anzahl > 0) {
@@ -68,6 +72,7 @@ function updateWarenkorb() {
 }
 
 
+/*
 (function(){
     emailjs.init("SCybvvddIN-VCwUvr");  // Ersetzen Sie "YOUR_USER_ID" durch Ihre EmailJS-Benutzer-ID
 })();
@@ -83,6 +88,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             alert('Fehler beim Senden der E-Mail. Fehler: ' + JSON.stringify(error));
         });
 });
+*/
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
@@ -97,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function toggleMenu() {
     const menu = document.querySelector('.menu-options');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+
 }
 
 // Springt zur gewählten Sektion
@@ -117,3 +124,28 @@ function artikelHinzufuegenUndSpringen(artikel) {
         warenkorbSection.scrollIntoView({ behavior: 'instant' });
     }
 }
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            let isValid = true;
+            const inputs = document.querySelectorAll('#contact-form input[required], #contact-form textarea[required]');
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                }
+            });
+            
+            if (!isValid) {
+                event.preventDefault();
+                document.getElementById('error-message').style.display = 'block';
+            }
+            if (isValid) {
+                const submitButton = document.getElementById("submit-btn");
+                const loadingText = document.getElementById("loading-text");
+        
+                submitButton.disabled = true;
+                submitButton.innerText = "Wird gesendet...";
+                loadingText.style.display = "block";
+            }
+        });
+
