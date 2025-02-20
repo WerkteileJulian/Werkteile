@@ -63,8 +63,9 @@ function updateWarenkorb() {
         liste.appendChild(li);
     });
 
-    // Warenkorb-Daten als JSON in das versteckte Textfeld setzen
-    document.getElementById('modelle').value = JSON.stringify(warenkorb);
+    // Warenkorb-Daten als JSON in das versteckte Textfeld setzen JSON.stringify(warenkorb)
+    const text = warenkorb.map(item => `${item.stueckzahl}x ${item.name}`).join("\n");
+    document.getElementById('modelle').value = text;
 
     // Anzahl der Artikel im Warenkorb berechnen und im Badge anzeigen
     const anzahl = warenkorb.reduce((summe, item) => summe + item.stueckzahl, 0);
