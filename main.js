@@ -64,8 +64,7 @@ function updateWarenkorb() {
     });
 
     // Warenkorb-Daten als JSON in das versteckte Textfeld setzen JSON.stringify(warenkorb)
-    const text = warenkorb.map(item => `${item.stueckzahl}x ${item.name}`).join("\n");
-    document.getElementById('modelle').value = text;
+    document.getElementById('modelle').value = JSON.stringify(warenkorb);
 
     // Anzahl der Artikel im Warenkorb berechnen und im Badge anzeigen
     const anzahl = warenkorb.reduce((summe, item) => summe + item.stueckzahl, 0);
