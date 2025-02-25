@@ -1,9 +1,8 @@
+
+# Webseite für Julians Werkteile
+
 Wichtiger Hinweis:
-
 Hierbei handelt es sich um kein ernstzunehmendes Projekt!!!!
-
-# Werkteile
-Webseite für Julians Werkteile
 
 🇩🇪 Beschreibung
 
@@ -18,10 +17,10 @@ Darstellung von Modell-LKWs und anderen Modellen
 
 Interaktive Features zur Verbesserung der Benutzererfahrung
 
-Model Trucks & Model Building Website
+
+# Model Trucks & Model Building Website
 
 Important Note:
-
 This is not a serious project!!!!
 
 🇬🇧 Description
